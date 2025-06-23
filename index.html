@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BLOG POST MANAGER</title>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Blogs/Post MANAGER</h1>
+        <div id="postlist"></div>
+        <div id="post details">
+            <h4>select a post t view the details</h4>
+        </div>
+        
+        <form id="new-post form">
+            <h5>NEW POST </h5>
+            <input type="text" id="new-title" placeholder="required"/>
+            <input type="text" id="new-author" placeholder="required"/>
+            <textarea id="new-content" placeholder="content" required></textarea>
+            <button type="submit">Add Post</button>
+            </form>
+
+            <!--edit post form-->
+            <form id="edit-post-form" class="hidden">
+                <h4>Edit Post</h4>
+                 <input type="text" id="new-title"/>
+                 <textarea id="edit-content" rows="5"></textarea>
+                 <button type="submit">Edit Post</button>
+                 <button type="button" id="cancel-edit">Cancel</button>
+         </form>
+    </div>
+    <script src="index,js"></script>
+</body>
+</html>
